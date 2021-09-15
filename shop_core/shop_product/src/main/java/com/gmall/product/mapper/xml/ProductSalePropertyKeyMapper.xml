@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gmall.product.mapper.ProductSalePropertyKeyMapper">
+
+    <resultMap id="productSalePropertyMap" type="com.gmall.entity.ProductSalePropertyKey" autoMapping="true">
+        <id property="id" column="id"></id>
+        <collection property="salePropertyValueList" ofType="com.gmall.entity.ProductSalePropertyValue"
+                    autoMapping="true">
+            <id column="product_sale_property_value_id" property="id"></id>
+        </collection>
+    </resultMap>
+    <sql id="productSaleProperty">
+        pspk.id,
+        pspk.product_id,
+        pspk.sale_property_key_id,
+        pspk.sale_property_key_name,
+        pspv.id product_sale_property_value_id,
+        pspv.sale_property_value_name
+    </sql>
+
+    <select id="selectProductSalePropertyKeyListById" resultMap="productSalePropertyMap">
+        SELECT
+        <include refid="productSaleProperty"></include>
+        FROM product_sale_property_key pspk
+        INNER JOIN product_sale_property_value pspv
+        ON pspk.product_id = pspv.product_id and pspk.sale_property_key_id = pspv.sale_property_key_id
+        WHERE a.product_id = #{productSpuId};
+    </select>
+
+    <sql id="SkuSalePropertyKeyAndValue">
+        pspk.id,
+        pspk.product_id,
+        pspk.sale_property_key_id,
+        pspk.sale_property_key_name,
+        pspv.id product_sale_property_value_id,
+        pspv.sale_property_value_name,
+        CASE WHEN ISNULL(sspv.sku_id) THEN 0 ELSE 1 END is_selected
+    </sql>
+    <select id="selectSkuSalePropertyKeyAndValue" resultMap="productSalePropertyMap">
+        SELECT
+        <include refid="SkuSalePropertyKeyAndValue"></include>
+        FROM product_sale_property_key pspk
+        INNER JOIN product_sale_property_value pspv
+        ON pspk.product_id = pspv.product_id
+        AND pspk.sale_property_key_id = pspv.sale_property_key_id
+        LEFT JOIN sku_sale_property_value sspv
+        ON pspv.id = sspv.sale_property_value_id
+        AND sspv.sku_id = #{skuId}
+        WHERE pspk.product_id = #{productId}
+        ORDER BY pspv.sale_property_key_id, pspv.id;
+    </select>
+</mapper>

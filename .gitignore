@@ -1,0 +1,22 @@
+# Project exclude paths
+/shop_core/shop_cart/target/
+/shop_core/shop_item/target/
+/shop_core/shop_order/target/
+/shop_core/shop_payment/target/
+/shop_core/shop_product/target/
+/shop_core/shop_search/target/
+/shop_core/shop_seckill/target/
+/shop_core/shop_user/target/
+/shop_feign_client/shop_cart_client/target/
+/shop_feign_client/shop_order_client/target/
+/shop_feign_client/shop_product_client/target/
+/shop_feign_client/shop_search_client/target/
+/shop_feign_client/shop_user_client/target/
+/shop_gateway/target/
+/shop_mbg/target/
+/shop_model/target/
+/shop_utils/shop_common_util/target/
+/shop_utils/shop_core_util/target/
+/shop_utils/shop_mybatisplus_ext.util/target/
+/shop_utils/shop_web_util/target/
+/shop_web/target/

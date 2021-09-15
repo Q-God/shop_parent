@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="shop_order" />
+        <module name="shop_web_util" />
+        <module name="shop_user" />
+        <module name="shop_mybatisplus_ext.util" />
+        <module name="shop_search_client" />
+        <module name="shop_common_util" />
+        <module name="shop_core_util" />
+        <module name="shop_payment" />
+        <module name="shop_gateway" />
+        <module name="shop_seckill_client" />
+        <module name="shop_product" />
+        <module name="shop_item" />
+        <module name="shop_web" />
+        <module name="shop_seckill" />
+        <module name="shop_order_client" />
+        <module name="shop_mbg" />
+        <module name="shop_model" />
+        <module name="shop_search" />
+        <module name="shop_cart_client" />
+        <module name="shop_product_client" />
+        <module name="shop_user_client" />
+        <module name="shop_cart" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="shop_mybatisplus_extension_util" target="1.8" />
+      <module name="shop_mybatisplus_util" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="shop_cart" options="-parameters" />
+      <module name="shop_cart_client" options="-parameters" />
+      <module name="shop_common_util" options="-parameters" />
+      <module name="shop_core" options="-parameters" />
+      <module name="shop_core_util" options="-parameters" />
+      <module name="shop_feign_client" options="-parameters" />
+      <module name="shop_gateway" options="-parameters" />
+      <module name="shop_item" options="-parameters" />
+      <module name="shop_mbg" options="-parameters" />
+      <module name="shop_model" options="-parameters" />
+      <module name="shop_mybatisplus_ext.util" options="-parameters" />
+      <module name="shop_mybatisplus_extension_util" options="-parameters" />
+      <module name="shop_mybatisplus_util" options="-parameters" />
+      <module name="shop_order" options="-parameters" />
+      <module name="shop_order_client" options="-parameters" />
+      <module name="shop_payment" options="-parameters" />
+      <module name="shop_payment_client" options="-parameters" />
+      <module name="shop_product" options="-parameters" />
+      <module name="shop_product_client" options="-parameters" />
+      <module name="shop_search" options="-parameters" />
+      <module name="shop_search_client" options="-parameters" />
+      <module name="shop_seckill" options="-parameters" />
+      <module name="shop_seckill_client" options="-parameters" />
+      <module name="shop_user" options="-parameters" />
+      <module name="shop_user_client" options="-parameters" />
+      <module name="shop_utils" options="-parameters" />
+      <module name="shop_web" options="-parameters" />
+      <module name="shop_web_util" options="-parameters" />
+    </option>
+  </component>
+</project>

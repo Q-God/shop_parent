@@ -1,0 +1,80 @@
+server:
+  port: 80
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        #路径匹配
+        - id: shop-product
+          uri: lb://shop-product
+          predicates:
+            - Path=/product/**
+        - id: shop-product
+          uri: lb://shop-product
+          predicates:
+            - Path=/sku/**
+        - id: shop-user
+          uri: lb://shop-user
+          predicates:
+            - Path=/user/**
+        - id: shop-cart
+          uri: lb://shop-cart
+          predicates:
+            - Path=/cart/**
+        - id: shop-order
+          uri: lb://shop-order
+          predicates:
+            - Path=/order/**
+        - id: shop-payment
+          uri: lb://shop-payment
+          predicates:
+            - Path=/payment/**
+        #主机地址匹配
+        - id: shop-web
+          uri: lb://shop-web
+          predicates:
+            - Host=item.gmall.com
+        - id: shop-www
+          uri: lb://shop-web
+          predicates:
+            - Host=www.gmall.com
+        - id: shop-www
+          uri: lb://shop-web
+          predicates:
+            - Host=search.gmall.com
+        - id: web-passport
+          uri: lb://shop-web
+          predicates:
+            - Host=passport.gmall.com
+        - id: web-cart
+          uri: lb://shop-web
+          predicates:
+            - Host=cart.gmall.com
+        - id: web-order
+          uri: lb://shop-web
+          predicates:
+            - Host=order.gmall.com
+        - id: web-payment
+          uri: lb://shop-web
+          predicates:
+            - Host=payment.gmall.com
+    nacos:
+      discovery:
+        server-addr: 10.10.10.10:8848
+  application:
+    name: shop-gateway
+  redis:
+    host: 10.10.10.10
+    port: 6379
+    database: 0
+    timeout: 1800000
+
+
+filter:
+  white-list: order.html,oredr.html
+logging:
+  level:
+    io.lettuce.core: debug

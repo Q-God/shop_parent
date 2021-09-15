@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: shop-item
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 172.16.196.130:8848
+      config:
+        server-addr: 172.16.196.130:8848
+        prefix: ${spring.application.name}
+        file-extension: yaml
+        shared-config[0]:
+          data-id: common.yaml

@@ -1,0 +1,8 @@
+1630023437289|10|statement|connection 0|url jdbc:p6spy:mysql://172.16.196.130:3306/gmall_product?characterEncoding=utf-8&useSSL=false|select 1 from dual|select 1 from dual
+1630023437334|4|statement|connection 1|url jdbc:p6spy:mysql://172.16.196.130:3306/gmall_product?characterEncoding=utf-8&useSSL=false|select 1 from dual|select 1 from dual
+1630023437365|1|statement|connection 2|url jdbc:p6spy:mysql://172.16.196.130:3306/gmall_product?characterEncoding=utf-8&useSSL=false|select 1 from dual|select 1 from dual
+1630023437391|4|statement|connection 3|url jdbc:p6spy:mysql://172.16.196.130:3306/gmall_product?characterEncoding=utf-8&useSSL=false|select 1 from dual|select 1 from dual
+1630023437406|1|statement|connection 4|url jdbc:p6spy:mysql://172.16.196.130:3306/gmall_product?characterEncoding=utf-8&useSSL=false|select 1 from dual|select 1 from dual
+1630023491589|230|statement|connection 4|url jdbc:p6spy:mysql://172.16.196.130:3306/gmall_product?characterEncoding=utf-8&useSSL=false|SELECT  id,name  FROM base_category1|SELECT  id,name  FROM base_category1
+1630023533369|1|statement|connection 4|url jdbc:p6spy:mysql://172.16.196.130:3306/gmall_product?characterEncoding=utf-8&useSSL=false|SELECT  id,name  FROM base_category1|SELECT  id,name  FROM base_category1
+1630023539262|1|statement|connection 4|url jdbc:p6spy:mysql://172.16.196.130:3306/gmall_product?characterEncoding=utf-8&useSSL=false|SELECT  id,name  FROM base_category1|SELECT  id,name  FROM base_category1

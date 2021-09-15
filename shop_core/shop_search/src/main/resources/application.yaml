@@ -1,0 +1,35 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: shop-search
+  elasticsearch:
+    rest:
+      uris: http://10.10.10.10:9200
+      read-timeout: 60s
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 10.10.10.10:8848
+  rabbitmq:
+    host: 10.10.10.10
+    port: 5672
+    username: guest
+    password: guest
+  redis:
+    host: 10.10.10.10
+    port: 6379
+    database: 3
+    timeout: 1800000
+feign:
+  sentinel:
+    enabled: true
+  client:
+    config:
+      default:
+        readTimeout: 3000
+        connectTimeout: 1000
+
+logging:
+  level:
+    org.springframework.data.elasticsearch.core: debug

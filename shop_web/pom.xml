@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>shop_parent</artifactId>
+        <groupId>com.gmall</groupId>
+        <version>1.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>shop_web</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.gmall</groupId>
+            <artifactId>shop_product_client</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.gmall</groupId>
+            <artifactId>shop_search_client</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.gmall</groupId>
+            <artifactId>shop_cart_client</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.gmall</groupId>
+            <artifactId>shop_web_util</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.gmall</groupId>
+            <artifactId>shop_common_util</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.gmall</groupId>
+            <artifactId>shop_order_client</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>shop_web</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+    </build>
+
+
+</project>

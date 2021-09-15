@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/shop_core/shop_cart/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_core/shop_item/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_core/shop_order/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_core/shop_payment/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_core/shop_payment/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_core/shop_product/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_core/shop_product/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_core/shop_search/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_core/shop_search/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_core/shop_seckill/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_core/shop_seckill/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_core/shop_user/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_core/shop_user/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_feign_client/shop_cart_client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_feign_client/shop_order_client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_feign_client/shop_payment_client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_feign_client/shop_payment_client/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_feign_client/shop_product_client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_feign_client/shop_product_client/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_feign_client/shop_search_client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_feign_client/shop_seckill_client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_feign_client/shop_user_client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_mbg/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_model/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_utils/shop_common_util/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_utils/shop_core_util/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_utils/shop_mybatisplus_ext.util/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_utils/shop_web_util/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_utils/shop_web_util/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_web/src/main/java" charset="UTF-8" />
+  </component>
+</project>
